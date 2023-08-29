@@ -1,0 +1,24 @@
+.app-container {
+    display: flex;
+    height: 100vh; /* Adjust as needed */
+  }
+  
+  .app-sidebar {
+    width: 220px; /* Adjust as needed */
+    /* background-color: #f0f0f0; */
+  }
+  
+  .content {
+    flex-grow: 1;
+    /* padding: 20px; */
+    /* background-color: #ffffff;  */
+  }
+  
+  .topbar {
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+    /* padding: 10px; */
+    /* background-color:rgba(144, 238, 144, 0.336);  */
+  }
+  

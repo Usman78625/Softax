@@ -1,0 +1,56 @@
+.mat-sidenav {
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    height: 100vh;
+  }
+  
+  .logo {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin-bottom: 15px;
+    margin-left: 10px;
+  }
+  
+  .logo-img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .dashboard-heading {
+    font-size: 1rem;
+    /* margin-bottom: 10px; */
+  }
+  
+  .sidebar-list-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* .dropdown-icon {
+    font-size: 1rem;
+  }
+   */
+   /* Style the dropdown icons */
+/* Style the dropdown icons */
+.mat-list-item .dropdown-icon {
+    font-size: 18px;
+    transition: transform 0.2s ease-in-out;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style the rotated dropdown icon for expanded items */
+  .mat-list-item .dropdown-icon.expanded {
+    transform: rotate(-180deg);
+  }
+  
+  
+  
+  
+  /* Add more custom styling here */

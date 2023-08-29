@@ -1,0 +1,6 @@
+
+.select-container {
+    max-height: 200px; /* Adjust as needed */
+    overflow-y: auto;
+  }
+  

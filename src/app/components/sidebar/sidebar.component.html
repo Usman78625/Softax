@@ -1,0 +1,129 @@
+<mat-sidenav mode="side" opened>
+    <!-- Logo -->
+    <div class="logo">
+      <img src="assets/Logo1.png" alt="Logo" class="logo-img">
+    </div>
+  
+    <!-- Dashboard Heading -->
+    <mat-nav-list class="dashboard-heading">
+       <mat-list-item> 
+        <mat-icon>dashboard</mat-icon>
+        Dashboard
+    </mat-list-item>
+    </mat-nav-list> 
+  
+    <!-- Admin Section -->
+    <mat-nav-list>
+      <mat-list-item class="sidebar-list-item" (click)="toggleSubMenu('admin')">
+        <mat-icon>admin_panel_settings</mat-icon>
+        Admin
+        <mat-icon class="dropdown-icon" *ngIf="isSubMenuExpanded('admin')">keyboard_arrow_down</mat-icon>
+        <mat-icon class="dropdown-icon" *ngIf="!isSubMenuExpanded('admin')">expand_more</mat-icon>
+      </mat-list-item>
+      <mat-list *ngIf="isSubMenuExpanded('admin')">
+        <mat-list-item>Company Group</mat-list-item>
+        <mat-list-item>Company Name</mat-list-item>
+        <mat-list-item>Location</mat-list-item>
+        <mat-list-item>Another Item</mat-list-item>
+      </mat-list>
+    </mat-nav-list>
+  
+    <!-- Accounts Section -->
+    <mat-nav-list>
+      <mat-list-item class="sidebar-list-item" (click)="toggleSubMenu('accounts')">
+        <mat-icon>account_balance</mat-icon>
+        Accounts
+        <mat-icon class="dropdown-icon" *ngIf="isSubMenuExpanded('accounts')">expand_less</mat-icon>
+        <mat-icon class="dropdown-icon" *ngIf="!isSubMenuExpanded('accounts')">expand_more</mat-icon>
+      </mat-list-item>
+      <mat-list *ngIf="isSubMenuExpanded('accounts')">
+        <mat-list-item>Charts of Account</mat-list-item>
+        <mat-list-item>Another Item</mat-list-item>
+        <!-- Add more account items here -->
+      </mat-list>
+    </mat-nav-list>
+    
+    <mat-nav-list>
+        <mat-list-item class="sidebar-list-item" (click)="toggleSubMenu('inventory')">
+          <mat-icon>store</mat-icon>
+          Inventory
+          <mat-icon class="dropdown-icon" *ngIf="isSubMenuExpanded('inventory')">expand_less</mat-icon>
+          <mat-icon class="dropdown-icon" *ngIf="!isSubMenuExpanded('inventory')">expand_more</mat-icon>
+        </mat-list-item>
+        <mat-list *ngIf="isSubMenuExpanded('inventory')">
+          <mat-list-item>Warehouse</mat-list-item>
+          <mat-list-item>Products</mat-list-item>
+          <mat-list-item>Change Category</mat-list-item>
+          <mat-list-item>Stock Opening Entry</mat-list-item>
+          <mat-list-item>Stock Debit Note</mat-list-item>
+          <mat-list-item>Another Item</mat-list-item>
+          <mat-list-item>Yet Another Item</mat-list-item>
+          <mat-list-item>And One More</mat-list-item>
+        </mat-list>
+      </mat-nav-list>
+    
+      <!-- ERP Section -->
+      <mat-nav-list>
+        <mat-list-item class="sidebar-list-item" (click)="toggleSubMenu('erp')">
+          <mat-icon>business</mat-icon>
+          ERP
+          <mat-icon class="dropdown-icon" *ngIf="isSubMenuExpanded('erp')">expand_less</mat-icon>
+          <mat-icon class="dropdown-icon" *ngIf="!isSubMenuExpanded('erp')">expand_more</mat-icon>
+        </mat-list-item>
+        <mat-list *ngIf="isSubMenuExpanded('erp')">
+          <mat-list-item>Subfield 1</mat-list-item>
+          <mat-list-item>Subfield 2</mat-list-item>
+          <!-- Add more subfields here -->
+        </mat-list>
+      </mat-nav-list>
+    
+      <!-- Purchase Section -->
+      <mat-nav-list>
+        <mat-list-item class="sidebar-list-item" (click)="toggleSubMenu('purchase')">
+          <mat-icon>shopping_cart</mat-icon>
+          Purchase
+          <mat-icon class="dropdown-icon" *ngIf="isSubMenuExpanded('purchase')">expand_less</mat-icon>
+          <mat-icon class="dropdown-icon" *ngIf="!isSubMenuExpanded('purchase')">expand_more</mat-icon>
+        </mat-list-item>
+        <mat-list *ngIf="isSubMenuExpanded('purchase')">
+          <mat-list-item>Subfield 1</mat-list-item>
+          <mat-list-item>Subfield 2</mat-list-item>
+          <!-- Add more subfields here -->
+        </mat-list>
+      </mat-nav-list>
+       <!-- Sales Section -->
+  <mat-nav-list>
+    <mat-list-item class="sidebar-list-item" (click)="toggleSubMenu('sales')">
+      <mat-icon>attach_money</mat-icon>
+      Sales
+      <mat-icon class="dropdown-icon" *ngIf="isSubMenuExpanded('sales')">expand_less</mat-icon>
+      <mat-icon class="dropdown-icon" *ngIf="!isSubMenuExpanded('sales')">expand_more</mat-icon>
+    </mat-list-item>
+    <mat-list *ngIf="isSubMenuExpanded('sales')">
+      <mat-list-item>Subfield 1</mat-list-item>
+      <mat-list-item>Subfield 2</mat-list-item>
+      <!-- Add more subfields here -->
+    </mat-list>
+  </mat-nav-list>
+
+  <!-- Utilities Section -->
+  <mat-nav-list>
+    <mat-list-item class="sidebar-list-item" (click)="toggleSubMenu('utilities')">
+      <mat-icon>build</mat-icon>
+      Utilities
+      <mat-icon class="dropdown-icon" *ngIf="isSubMenuExpanded('utilities')">expand_less</mat-icon>
+      <mat-icon class="dropdown-icon" *ngIf="!isSubMenuExpanded('utilities')">expand_more</mat-icon>
+    </mat-list-item>
+    <mat-list *ngIf="isSubMenuExpanded('utilities')">
+      <mat-list-item>Subfield 1</mat-list-item>
+      <mat-list-item>Subfield 2</mat-list-item>
+      <!-- Add more subfields here -->
+    </mat-list>
+  </mat-nav-list>
+
+    
+      <!-- Other Sections -->
+      <!-- ... Add more sections and subfields here ... -->
+
+  </mat-sidenav>
+  

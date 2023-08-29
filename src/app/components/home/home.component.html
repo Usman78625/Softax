@@ -1,0 +1,52 @@
+<div class="heading">
+    <h4>Chart of Accounts</h4>
+    <p>Manage your chart account</p>
+</div>
+
+<mat-card>
+    <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  
+      <!-- Level 1 Column -->
+      <ng-container matColumnDef="level1">
+
+        <div class="header-with-dropdown">
+            
+            <mat-select>
+                <span>Select Level</span> 
+              <mat-option>Option 1</mat-option>
+              <mat-option>Option 2</mat-option>
+              <!-- Add more options here -->
+            </mat-select>
+          </div>
+        <mat-header-cell *matHeaderCellDef> Level 1 </mat-header-cell>
+        <mat-cell *matCellDef="let item"> {{ item.level1 }} </mat-cell>
+      </ng-container>
+  
+      <!-- Level 2 Column -->
+      <ng-container matColumnDef="level2">
+        <mat-header-cell *matHeaderCellDef> Level 2 </mat-header-cell>
+        <mat-cell *matCellDef="let item"> {{ item.level2 }} </mat-cell>
+      </ng-container>
+  
+      <!-- Level 3 Column -->
+      <ng-container matColumnDef="level3">
+        <mat-header-cell *matHeaderCellDef> Level 3 </mat-header-cell>
+        <mat-cell *matCellDef="let item"> {{ item.level3 }} </mat-cell>
+      </ng-container>
+  
+      <!-- ... Add other level columns ... -->
+  
+      <!-- Action Column -->
+      <ng-container matColumnDef="action">
+        <mat-header-cell *matHeaderCellDef> Action </mat-header-cell>
+        <mat-cell *matCellDef="let item">
+          <button mat-icon-button><mat-icon>edit</mat-icon></button>
+          <button mat-icon-button><mat-icon>delete</mat-icon></button>
+        </mat-cell>
+      </ng-container>
+  
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  </mat-card>
+  

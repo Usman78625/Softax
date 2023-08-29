@@ -1,0 +1,33 @@
+.heading {
+    margin: 20px;
+}
+mat-card {
+    margin: 20px;
+}
+.mat-table {
+    width: 80%;
+    /* overflow: auto; */
+  }
+  
+  .mat-cell,
+  .mat-header-cell {
+    padding: 10px;
+  }
+  
+  button.mat-icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+
+  .header-with-dropdown {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-with-dropdown mat-select {
+    margin-left: 10px;
+  }
+  
+  
